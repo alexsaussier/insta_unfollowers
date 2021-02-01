@@ -11,7 +11,7 @@ import datetime
 
 
 # related content for help on Page 257 of "Automating the boring stuff with Python"
-browser = webdriver.Firefox(executable_path='/Users/a_saussier/Documents/geckodriver')
+browser = webdriver.Firefox(executable_path='/Path/for/geckodriver')
 
 def login(username, password):
 
@@ -48,7 +48,7 @@ def login(username, password):
     sleep(5)
 
 
-login('alexsaussier', 'Alexandre99$')
+login('some_username', 'some_password')
 
 # Got to profile
 toProfileElem = browser.find_element_by_xpath('/html/body/div[1]/section/main/section/div[3]/div[1]/div/div[2]/div[1]/a'
